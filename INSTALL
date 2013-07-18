@@ -32,13 +32,10 @@ when needed, like:
 ),
 
 4) Register the giix messages directory, like the example below.
-Note: This feature is pending on Yii core (as of Yii 1.1.8 revision 3364). You will need to patch your Yii instalation.
-See <http://code.google.com/p/yii/issues/detail?id=2624> for details and the patch.
 'components' => array(
 	...
 	'messages' => array (
-		// Pending on core: http://code.google.com/p/yii/issues/detail?id=2624
-		'extensionBasePaths' => array(
+		'extensionPaths' => array(
 			'giix' => 'ext.giix.messages', // giix messages directory.
 		),
 	),
